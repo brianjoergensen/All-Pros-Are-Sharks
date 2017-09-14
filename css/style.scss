@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('https://skin.sharkgaming.dk/skin/frontend/ultimo/default/images/asfalt.png') repeat;
+}
+
+.topDefault,
+.footerDefault {
+    width: 960px;
+    margin: 0 auto;
+    background-image: url('/img/defaults.jpg');
+}
+
+.topDefault {
+    height: 302px;
+    background-position: top;
+}
+
+.footerDefault {
+    height: 555px;
+    background-position: bottom;
+}
+
+// build-up ↓
+
