@@ -3,7 +3,7 @@
   margin: 0; }
 
 body {
-  background: url("https://skin.sharkgaming.dk/skin/frontend/ultimo/default/images/asfalt.png") repeat; }
+  background: #050505 !important; }
 
 .topDefault,
 .footerDefault {
@@ -19,14 +19,56 @@ body {
   height: 555px;
   background-position: bottom; }
 
-h1, h2, h3,
-h4, h5, h6 {
+.astralis {
   color: #ee3e42 !important; }
+  .astralis:before {
+    content: '';
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("/img/astralis-logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+.row {
+  border-bottom: 3px solid #222;
+  margin-bottom: 80px;
+  padding-bottom: 80px; }
+
+.north {
+  color: #256ac0 !important; }
+  .north:before {
+    content: '';
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("/img/north-logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+.heroic {
+  color: #3edd7a !important; }
+  .heroic:before {
+    content: '';
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("/img/heroic-logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; }
 
 p {
   color: #777; }
 
-.sectionOne {
-  background: #090909; }
-  .sectionOne .container-fluid .col-4 {
-    padding: 40px; }
+.sectionOne .container {
+  margin-top: 80px; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px !important; } }

@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url('https://skin.sharkgaming.dk/skin/frontend/ultimo/default/images/asfalt.png') repeat;
+    background: #050505 !important; //url('https://skin.sharkgaming.dk/skin/frontend/ultimo/default/images/asfalt.png') repeat;
 }
 
 .topDefault,
@@ -24,11 +24,57 @@ body {
     background-position: bottom;
 }
 
-// build-up ↓
+// bootstrap build-up ↓
 
-h1, h2, h3,
-h4, h5, h6 {
+.astralis {
     color: #ee3e42 !important;
+    &:before {
+        content: '';
+        width: 30px;
+        height: 50px;
+        display: inline-block;
+        margin-right: 10px;
+        background-image: url('/img/astralis-logo.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.row {
+    border-bottom: 3px solid #222;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+}
+
+.north {
+    color: #256ac0 !important;
+    &:before {
+        content: '';
+        width: 30px;
+        height: 50px;
+        display: inline-block;
+        margin-right: 10px;
+        background-image: url('/img/north-logo.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.heroic {
+    color: #3edd7a !important;
+    &:before {
+        content: '';
+        width: 30px;
+        height: 50px;
+        display: inline-block;
+        margin-right: 10px;
+        background-image: url('/img/heroic-logo.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 p {
@@ -36,12 +82,21 @@ p {
 }
 
 .sectionOne {
-    background: #090909;
+    // background: rgba(0,0,0,0.20);
 
-    .container-fluid {
-        
-        .col-4 {
-            padding: 40px;
+    .container {
+        margin-top: 80px;
+
+        .col-md-4 {
+            // padding: 60px;
         }
+    }
+}
+
+// media queries
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px !important;
     }
 }
