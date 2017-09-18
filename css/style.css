@@ -3,7 +3,7 @@
   margin: 0; }
 
 body {
-  background: #050505 !important; }
+  background: #000 !important; }
 
 .topDefault,
 .footerDefault {
@@ -19,6 +19,42 @@ body {
   height: 555px;
   background-position: bottom; }
 
+p {
+  color: #777; }
+
+.heroBanner {
+  height: 80vh;
+  width: 100%;
+  background-color: #151515;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+  .heroBanner h1 {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 12rem;
+    letter-spacing: 10px;
+    color: white; }
+    .heroBanner h1 small {
+      font-size: 8rem;
+      display: block;
+      color: rgba(255, 255, 255, 0.3); }
+
 .astralis {
   color: #ee3e42 !important; }
   .astralis:before {
@@ -31,11 +67,6 @@ body {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat; }
-
-.row {
-  border-bottom: 3px solid #222;
-  margin-bottom: 80px;
-  padding-bottom: 80px; }
 
 .north {
   color: #256ac0 !important; }
@@ -63,12 +94,32 @@ body {
     background-position: center center;
     background-repeat: no-repeat; }
 
-p {
-  color: #777; }
-
-.sectionOne .container {
-  margin-top: 80px; }
-
 @media (min-width: 1200px) {
   .container {
-    max-width: 1600px !important; } }
+    max-width: 1600px !important;
+    margin-top: -200px; }
+  .col-lg-4 {
+    background-color: #151515;
+    padding: 40px !important; } }
+
+@media (min-width: 768px) {
+  .no-padding-left-right {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .no-padding-top-bottom {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
+  .no-padding-top {
+    padding-top: 0px !important; }
+  .no-padding-right {
+    padding-right: 0px !important; }
+  .no-padding-bottom {
+    padding-bottom: 0px !important; }
+  .no-padding-left {
+    padding-left: 0px !important; } }
+
+@media (max-width: 1200px) {
+  .row {
+    border-bottom: 3px solid #222;
+    margin-bottom: 80px;
+    padding-bottom: 80px; } }

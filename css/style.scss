@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #050505 !important; //url('https://skin.sharkgaming.dk/skin/frontend/ultimo/default/images/asfalt.png') repeat;
+    background: #000 !important; //url('https://skin.sharkgaming.dk/skin/frontend/ultimo/default/images/asfalt.png') repeat;
 }
 
 .topDefault,
@@ -24,7 +24,37 @@ body {
     background-position: bottom;
 }
 
+p {
+    color: #777;
+}
+
 // bootstrap build-up ↓
+
+.heroBanner {
+    height: 80vh;
+    width: 100%;
+    background-color: #151515;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+
+    h1 {
+        font-family: 'Teko', sans-serif;
+        text-transform: uppercase;
+        font-size: 12rem;
+        letter-spacing: 10px;
+        color: rgba(255,255,255,1);
+
+        small {
+            font-size: 8rem;
+            display: block;
+            color: rgba(255,255,255,0.3);
+        }
+    }
+}
 
 .astralis {
     color: #ee3e42 !important;
@@ -39,12 +69,6 @@ body {
         background-position: center center;
         background-repeat: no-repeat;
     }
-}
-
-.row {
-    border-bottom: 3px solid #222;
-    margin-bottom: 80px;
-    padding-bottom: 80px;
 }
 
 .north {
@@ -77,26 +101,48 @@ body {
     }
 }
 
-p {
-    color: #777;
-}
-
-.sectionOne {
-    // background: rgba(0,0,0,0.20);
-
-    .container {
-        margin-top: 80px;
-
-        .col-md-4 {
-            // padding: 60px;
-        }
-    }
-}
-
 // media queries
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1600px !important;
+        max-width: 1600px !important; // 1600px
+        margin-top: -200px;
+    }
+
+    .col-lg-4 {
+        background-color: #151515;
+        padding: 40px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .no-padding-left-right {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .no-padding-top-bottom {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .no-padding-top {
+        padding-top: 0px !important;
+    }
+    .no-padding-right {
+        padding-right: 0px !important;
+    }
+    .no-padding-bottom {
+        padding-bottom: 0px !important;
+    }
+    .no-padding-left {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .row {
+        border-bottom: 3px solid #222;
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+        // box-shadow: 0px 70px 110px #000;
     }
 }
